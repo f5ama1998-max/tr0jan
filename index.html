@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تنبيه وإخلاء مسؤولية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000000;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Cairo', sans-serif;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* علامة التنبيه الصغيرة */
+        .warning-icon {
+            width: 44px;
+            height: 44px;
+            color: #ff3333;
+        }
+
+        /* العنوان الرئيسي بالأحمر وبحجم كبير */
+        .title {
+            color: #ff2a2a;
+            font-size: clamp(28px, 4vw, 42px);
+            font-weight: 800;
+            line-height: 1.4;
+            letter-spacing: -0.5px;
+            text-shadow: 0 0 20px rgba(255, 42, 42, 0.25);
+        }
+
+        .divider {
+            width: 80px;
+            height: 2px;
+            background-color: #222;
+            margin: 5px 0;
+        }
+
+        /* النصوص البيضاء */
+        .disclaimer-ar {
+            color: #f1f1f1;
+            font-size: clamp(16px, 2.2vw, 20px);
+            font-weight: 400;
+            line-height: 1.8;
+            max-width: 850px;
+        }
+
+        .disclaimer-ar strong {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        .disclaimer-en {
+            color: #cccccc;
+            font-family: 'Inter', sans-serif;
+            direction: ltr;
+            text-align: center;
+            font-size: clamp(14px, 1.8vw, 17px);
+            font-weight: 400;
+            line-height: 1.6;
+            max-width: 820px;
+            margin-top: 10px;
+        }
+
+        .disclaimer-en strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- أيقونة تنبيه صغيرة وبسيطة SVG -->
+        <svg class="warning-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+        </svg>
+
+        <!-- العنوان الأحمر الكبير -->
+        <h1 class="title">هذا الموقع فقط للتجربة وللأغراض التعليمية</h1>
+
+        <div class="divider"></div>
+
+        <!-- النص العربي -->
+        <p class="disclaimer-ar">
+            <strong>تنبيه وإخلاء مسؤولية:</strong> تم إعداد هذا الشرح لأغراض الأمن السيبراني والتعليم فقط، بهدف التوعية والحماية وفهم آلية العمل. جميع التجارب تمت في بيئة معزولة وخاضعة للتحكم. نحن لا نشجع ولا ندعم أي ممارسات غير قانونية أو اختراق غير مصرح به.
+        </p>
